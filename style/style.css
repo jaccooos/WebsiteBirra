@@ -1,0 +1,91 @@
+body{
+	background-color:#f37021;
+}
+
+#wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px; 
+	width: 960px;
+	background-color: white;
+}
+#navagation{
+	margin-top: -10px;
+}
+#sidebar{
+	width: 270px;
+}
+
+#menu{
+	width: 100%;
+	height: 60px;
+	background-color: solid withe;
+	margin-right: 0px;
+	margin-top: 5px;
+	
+	}
+
+.home{
+opacity: 0.7;
+size: 60px, 60px;
+}
+.home:hover{
+opacity: 1;
+size: 60px, 60px;
+}
+a.button{
+	color:black; 
+	text-decoration: none;
+	font-size:20px;
+	border-top: 1px solid #008ac8;
+	text-align:center;
+	padding: 19px 15px 18px 15px;
+	margin-right: 3px;
+	margin-top: 3px;
+	
+/* achter grond*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(182,188,198,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(182,188,198,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(182,188,198,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(182,188,198,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(182,188,198,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6bcc6', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+a.button:hover{
+	border-top: 5px solid #0099cc;
+	background-color: #ffffff;
+	width: 100px;
+	font-size:20px;
+	color:#0099cc;
+	text-align:center;
+	padding: 19px 15px 18px 15px; 
+	
+/* achter grond*/
+	background: -moz-linear-gradient(top,  rgba(182,188,198,1) 26%, rgba(228,231,234,1) 73%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(26%,rgba(182,188,198,1)), color-stop(73%,rgba(228,231,234,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(182,188,198,1) 26%,rgba(228,231,234,1) 73%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(182,188,198,1) 26%,rgba(228,231,234,1) 73%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(182,188,198,1) 26%,rgba(228,231,234,1) 73%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(182,188,198,1) 26%,rgba(228,231,234,1) 73%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6bcc6', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+#registratietabel{
+width: 400px; 
+
+}
+#registratietabel tr{
+height: 40px;
+}
+#kalender{
+	width: 920px;
+	margin: 20px;
+	height: 700px;
+}
+#regbutton{
+background-color: #008ac8
+}
