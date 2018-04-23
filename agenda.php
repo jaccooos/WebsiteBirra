@@ -28,7 +28,7 @@
 			</div>
 			<div id="kalender">
 				<?php
-					$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','sql7233356','D5GhJlGVsW');
+					$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','D5GhJlGVsW','sql7233356','3306');
 					if(mysqli_errno($connection)){
 						echo' something ging fout'; 
 					}

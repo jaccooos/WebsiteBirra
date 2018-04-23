@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$connection = mysqli_connect("sql7.freesqldatabase.com", "sql7233356", "sql7233356", "D5GhJlGVsW");
+	$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','D5GhJlGVsW','sql7233356','3306');
 	if (mysqli_connect_errno($connection)){
 		echo ' something went wrong' ;
 	}

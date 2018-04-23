@@ -1,5 +1,5 @@
 body{
-	background-color:#f37021;
+	background-color:silver;
 }
 
 #wrapper{
@@ -7,7 +7,7 @@ body{
 	margin-right: auto;
 	height: 500px; 
 	width: 960px;
-	background-color: white;
+	background-color: yellow;
 }
 #navagation{
 	margin-top: -10px;

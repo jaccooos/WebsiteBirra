@@ -4,7 +4,7 @@
 </div>
 <div id="text">
 	<?php
-		$connection = mysqli_connect('www.dewillem.org', 'H5groep2', 'H5groep2', 'H5groep2');
+		$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','D5GhJlGVsW','sql7233356','3306');
 		$datum_vandaag = date("Y-m-d H:i:s"); 
 		$query = mysqli_query($connection, "SELECT Naam,DatumBegin,DatumEind FROM agenda WHERE DatumBegin > '".$datum_vandaag."' ORDER BY DatumBegin ASC LIMIT 3  "); 
 		while ($resultaat = mysqli_fetch_assoc($query)){
