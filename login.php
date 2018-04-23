@@ -18,3 +18,4 @@
 		session_destroy();
 	}
 	mysqli_close($connection);
+?> 

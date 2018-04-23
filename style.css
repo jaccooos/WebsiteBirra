@@ -1,5 +1,6 @@
 body{
-	background-color:#f37021;
+	background-image: image/background.jpg;
+	background-repeat: repeat-x;
 }
 
 #wrapper{
@@ -7,7 +8,7 @@ body{
 	margin-right: auto;
 	height: 500px; 
 	width: 960px;
-	background-color: red;
+	background-color: white;
 }
 #navagation{
 	margin-top: -10px;
