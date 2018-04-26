@@ -94,7 +94,7 @@
 						<td>
 					
 				';
-					$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','D5GhJlGVsW','sql7233356','3306');
+					$connection = mysqli_connect('sql7.freesqldatabase.com','sql7234794','xQ8u9lhzpC','sql7234794','3306');
 					if(mysqli_errno($connection)){
 						echo' something ging fout'; 
 					}
@@ -105,14 +105,15 @@
 								if($_POST['wachtwoord'] == $_POST['wachtwoord2']){ 
 									$query=mysqli_query($connection, "SELECT * FROM user WHERE Username = '".$_POST['gebruikersnaam']."'");
 										if (mysqli_num_rows($query) == 0){
-												mysqli_query($connection, "INSERT INTO user (Username, Email, Password, VolledigeNaam, GeboorteDatum, Admin, Biertjes) VALUES ('".$_POST['gebruikersnaam']."','".$_POST['e-mail']."','".md5($_POST['wachtwoord'])."','".$_POST['volledigenaam']."','".$_POST['geboortedatum']."','0','0',)");
+											mysqli_query($connection, "INSERT INTO user (Username, Email, Password, VolledigeNaam, GeboorteDatum, Admin, Biertjes) VALUES ('".$_POST['gebruikersnaam']."','".$_POST['e-mail']."','".md5($_POST['wachtwoord'])."','".$_POST['volledigenaam']."','".$_POST['geboortedatum']."','0','0',)");
 													$query=mysqli_query($connection, "SELECT * FROM user WHERE Username = '".$_POST['gebruikersnaam']."'");
 													if (mysqli_num_rows($query) == 1){
 														echo'Het registreren is gelukt !! <br> Veel plezier op de site.';
 													
 													}else{
 														echo 'Het is niet helemaal goed gegaan probeer het nog een keer';
-													}
+													}	 
+													
 										}else{
 											echo 'jouw gebruikers naam is al door iemand anders gekozen probeer een andere'; 
 										}
