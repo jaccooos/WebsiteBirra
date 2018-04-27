@@ -118,7 +118,7 @@
 											echo 'jouw gebruikers naam is al door iemand anders gekozen probeer een andere'; 
 										}
 								}else{ 
-									echo 'wachtwoord komt niet overeen';
+									echo 'wachtword komt niet overeen';
 								}
 							}else{
 								echo 'wachtwoord moet minimaal 5 tekens zijn gebruik een ander wachtwoord';
