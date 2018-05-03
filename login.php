@@ -1,10 +1,12 @@
 <?php
 	session_start();
-	$connection = mysqli_connect('sql7.freesqldatabase.com','sql7233356','D5GhJlGVsW','sql7233356','3306');
+	$connection = mysqli_connect('sql7.freesqldatabase.com','sql7234794','xQ8u9lhzpC','sql7234794','3306');
 	if (mysqli_connect_errno($connection)){
 		echo ' something went wrong' ;
 	}
 
+
+	
 	$gebruikersnaam = mysqli_real_escape_string($connection, $_POST["gb"]);
 	$wachtwoord = mysqli_real_escape_string($connection, md5($_POST["pass"]));
 	

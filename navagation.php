@@ -1,10 +1,13 @@
 <div id="menu">
-	<a class="home" href="index.php"><img src="image/home1.png"/></a>
 	
-	<nav style="float:right; margin-top:35px;">
+	<nav style="float:left; margin-top:35px; margin-left: 10px;">
+		<a class="button" href="index.php"> Home</a>
+	</nav>
+	<nav style="float:right; margin-top:35px; margin-right: 10px;">
+			<a class="button" href="Login2.php">Inloggen</a>
 			<a class="button" href="Status.php">Statussen</a>
-			<a class="button" href="registratie.php">registreren</a>
-			<a class="button" href="Myadmin/index.php">database</a>
+			<a class="button" href="registratie.php">Registreren</a>
+			<a class="button" href="Myadmin/index.php">Database</a>
 		
 	</nav>
 	

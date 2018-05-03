@@ -8,6 +8,7 @@
 	
 	<head>
 		<?php include("header.php"); ?>
+		<meta charset="windows-1252">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -15,7 +16,10 @@
 			<div id="navagation">
 				<?php include("navagation.php"); ?>
 			</div>
+			<div id="main">
+				<h1>De huidige statussen</h1>
 			<?php
+				
 				$connection = mysqli_connect('sql7.freesqldatabase.com','sql7234794','xQ8u9lhzpC','sql7234794','3306');
 				if(mysqli_errno($connection)){
 					echo' something ging fout'; 
@@ -26,52 +30,53 @@
 				
 				$row = mysqli_fetch_assoc($query);
 				
-				echo 'Vooraad:' . $row["Vooraad"]. "<br>";
-				echo 'Magazijn:' . $row["Magazijn"]. "<br>";
+				echo '<h3>Vooraad:' . $row["Vooraad"]. "</h3>";
+				echo '<h3>Magazijn:' . $row["Magazijn"]. "</h3>";
 				
 				
 				
 				if( $row["Bezig"] = 1)
 				{
-					echo 'De Birra is nu Bezig<br>';
+					echo '<h3>De Birra is nu Bezig</h3>';
 						if($row["Status"] = 0)
 						{
-							echo 'Huidige bezigheid is: Beker laten vallen';
+							echo '<h3>Huidige bezigheid is: Beker laten vallen</h3>';
 						}
 						elseif($row["Status"] = 1)
 						{
-							echo 'Huidige bezigheid is: Bekker vullen';
+							echo '<h3>Huidige bezigheid is: Bekker vullen</h3>';
 						}
 						elseif($row["Status"] = 2)
 						{
-							echo 'Huidige bezigheid is: Carocel draaien';
+							echo '<h3>Huidige bezigheid is: Carocel draaien</h3>';
 						}
 						elseif($row["Status"] = 2)
 						{
-							echo 'Huidige bezigheid is: Deur openen';
+							echo '<h3>Huidige bezigheid is: Deur openen</h3>';
 						}
 						elseif($row["Status"] = 2)
 						{
-							echo 'Huidige bezigheid is: Wachten tot het biertje gepakt is';
+							echo '<h3>Huidige bezigheid is: Wachten tot het biertje gepakt is</h3>';
 						}
 						elseif($row["Status"] = 2)
 						{
-							echo 'Huidige bezigheid is: Deur dicht doen';
+							echo '<h3>Huidige bezigheid is: Deur dicht doen</h3>';
 						}
 						else
 						{
-							echo 'Geen verdere informatie beschikbaar';
+							echo '<h3>Geen verdere informatie beschikbaar</h3>';
 						}						
 				}	
 				elseif( $row["Gereed"] = 1)
 				{
-					echo 'De BIrra is nu Gereed';
+					echo '<h3>De BIrra is nu Gereed</h3>';
 				}	
 				elseif( $row["Error"] = 1)
 				{
-					echo 'De BIrra heeft een Error';
+					echo '<h3>De BIrra heeft een Error</h3>';
 				}	
 			?>
+			</div>
 		</div>
 	</body>
 </html>
