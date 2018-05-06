@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-	
 	<head>
 		<?php include("header.php"); ?>
 		<meta charset="windows-1252">
@@ -13,8 +12,40 @@
 			</div>
 			<div id="main">
 				<h1>Login:</h1>
-				<?php include("login.php"); ?>
+
+				<br />
+				<br />
+				<form method="post" action="login.php">
+					<table id="registratietabel">
+						<tr>
+							<td>
+								Gebruikersnaam: 
+							</td>
+							<td>
+								<input name="gb" type="text"/> <br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Wachtwoord: 
+							</td>
+							<td>
+								<input name="pass" type="password"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" value="inloggen" />
+							</td>
+						</tr>
+					</table>
+				</form>
 			</div>
+			<?php
+				if(isset($_GET["error"])){
+					print 'Inlog ongeldig';
+				}
+			?>
 			<div id="main" style="float:left; margin-top:35px; margin-left: 20px;">
 				<a class="buttonreg" href="registratie.php">Registreren</a>
 			</div>

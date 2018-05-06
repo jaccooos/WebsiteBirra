@@ -37,7 +37,7 @@
 						</td>
 						
 						<td>
-							<input maxlength="10" type="text" value="'.$form[1].'" name="geboortedatum"/>
+							<input maxlength="10" type="date" value="'.$form[1].'" name="geboortedatum"/>
 						</td>
 					</tr>
 					
@@ -94,7 +94,7 @@
 						<td>
 					
 				';
-					$connection = mysqli_connect('sql7.freesqldatabase.com','sql7234794','xQ8u9lhzpC','sql7234794','3306' );
+					$connection = mysqli_connect('localhost','monitor','Raspberry', 'projectbirra' );
 					if(mysqli_errno($connection)){
 						echo' something ging fout'; 
 					}
